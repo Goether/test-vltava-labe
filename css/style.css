@@ -1,0 +1,238 @@
+body {
+    font-family:arial;
+    margin:0px;
+    
+}
+
+.container {
+    max-width:1920px;
+    margin:0 auto;
+    position:relative;
+    
+}
+
+
+.header {
+    width:100%;
+    height: 166px;
+    position:relative;
+}
+
+.nadpis-holder {
+    padding: 47px 37px;
+    float:left;
+}
+
+h1 {
+    font-size:52px;
+    margin:0;
+    font-weight:800;
+   
+}
+
+.vyhledavani-holder {
+    float:left;
+    margin-top: 50px;
+    margin-left: 72px;
+    position:relative;
+}
+
+.vyhledavani-holder input {
+    height:60px;
+    width: 600px;
+    background-color:#cacaca;
+    border:1px solid black;
+    padding-left:30px;
+    font-size:20px;
+    position:relative;
+}
+
+
+ .vyhledavani-holder:after {
+    content: url(../images/lupa.png);
+    display: block;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    pointer-events:none;
+ } 
+
+ 
+
+.content {
+    width:100%;
+    background:#CACACA;
+    position:relative;
+    float:left;
+    padding-bottom:50px;
+}
+
+
+#vysledek {
+    background-color:#fff;
+    padding:0 25px;
+    -webkit-box-shadow: 10px 10px 38px -1px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 38px -1px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 38px -1px rgba(0,0,0,0.25);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    position: absolute;
+    width: 550px;
+    z-index: 100000;
+}
+
+
+
+#vysledek p  {
+    margin:0;
+    padding:10px;
+    
+ }
+
+#vysledek p span {
+    color:red;
+ }
+ 
+.polozka::first-letter {
+    text-transform:uppercase !important;
+}
+ 
+.polozka {
+    display:none;  
+} 
+
+
+.polozka:hover {
+    background-color:#eeeeee;
+    cursor:pointer;
+ }
+ 
+ 
+ .grid-item {
+    padding: 9px;
+    position:relative;
+    float:left;
+    min-height:250px;
+    -webkit-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+ }
+ 
+
+.grid {
+    width: calc(100% - 18px);
+    position:relative;
+    padding: 9px;
+}
+
+
+ .quater {
+    width: calc(25% - 18px);
+ }
+ 
+ .half {
+    width: calc(50% - 18px);
+ }
+ 
+ 
+ .nizky {
+    height: calc(25vw - 18px);
+ }
+ 
+  .vysoky {
+    height: calc(50vw - 18px);
+    position:absolute;
+    right: 4px;
+ }
+ 
+.grid-item-inner {
+    background-color: #0244bd;
+    width:100%;
+    height:100%;
+    -webkit-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    
+ }
+ 
+
+.obrazek {
+    overflow:hidden;
+    position:relative;
+}
+ 
+ 
+.img-grid {
+      width:105%;
+      position:absolute;
+      left:50%;
+      transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -o-transform:  translateX(-50%);
+}
+ 
+.text {
+    overflow-Y:auto;
+}
+ 
+ 
+.text p {
+    padding:0 25px;
+    color:white;   
+}
+ 
+ 
+ 
+.grid-item:hover {
+      z-index:100;
+}
+   
+   
+   
+.doleva:hover {
+       transform: translateX(-20%);
+    -moz-transform: translateX(-20%);
+    -ms-transform: translateX(-20%);
+    -webkit-transform: translateX(-20%);
+    -o-transform:  translateX(-20%);
+}
+   
+   
+.doprava:hover {
+    transform: translateX(20%);
+    -moz-transform: translateX(20%);
+    -ms-transform: translateX(20%);
+    -webkit-transform: translateX(20%);
+    -o-transform:  translateX(20%);
+}
+   
+   
+.grid-item:hover .grid-item-inner {
+    transform:scale(1.25);
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    cursor:pointer;
+    -webkit-box-shadow: 6px 18px 125px -17px rgba(217,217,224,1);
+    -moz-box-shadow: 6px 18px 125px -17px rgba(217,217,224,1);
+    box-shadow: 6px 18px 125px -17px rgba(217,217,224,1);
+}
+ 
+.clear {
+    clear:both;
+}
+ 
+ 
+
